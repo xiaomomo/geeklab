@@ -37,18 +37,39 @@
 
 <div class="lab_content">
     <div>
-        <form class="form-inline">
+        <form class="form-inline" onsubmit="return false">
             <div class="form-group">
                 <input id="poem_word" class="form-control" placeholder="请输入第一个字">
             </div>
-            <button type="submit" class="btn btn-primary" style="margin-left: 2rem">生成古诗</button>
+            <button type="submit" class="btn btn-primary" style="margin-left: 2rem" onclick="generatePoem()">
+                生成古诗
+            </button>
         </form>
 
     </div>
     <div>
-        <p class="poem_content"></p>
+        <img id="loadding" src="../static/assets/loadding.gif" style="display: none; "/>
+        <p id="poem_content">待生成</p>
     </div>
 </div>
+
+<script>
+    function generatePoem() {
+        var word = document.getElementById('poem_word').value
+
+        document.getElementById('loadding').style.display = 'block'
+        $.ajax({
+            type: 'GET',
+            url: "http://119.29.106.18:5000/hello?word=" + word,
+            success: function (res) {
+                console.log(res)
+                document.getElementById('poem_content').innerText = res
+                document.getElementById('loadding').style.display = 'none'
+            }
+        });
+        return false;
+    }
+</script>
 
 </body>
 </html>
