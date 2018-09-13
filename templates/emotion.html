@@ -33,17 +33,23 @@
 <body>
 <div class="lab_desc">
     <p class="project_title">情绪识别器</p>
-    <img src="https://s1.ax1x.com/2018/09/13/iAch6J.jpg">
+    {#    <img src="https://s1.ax1x.com/2018/09/13/iAch6J.jpg">#}
 </div>
 
 <div class="lab_content">
     <div>
 
-        <input id="composition_pic" class="form-control" placeholder="请输入第一个字" type="file">
+        <form id="upload-form" action="http://adacode.net:8084/classifyImage" method="post"
+              enctype="multipart/form-data">
+            　　　<input type="file" id="image" name="image"/>
+            　　　
+            <button type="submit" value="Upload">识别微表情</button>
+        </form>
+
 
     </div>
     <div>
-        <img src="https://s1.ax1x.com/2018/09/13/iAch6J.jpg">
+        {#        <img src="https://s1.ax1x.com/2018/09/13/iAch6J.jpg">#}
     </div>
 </div>
 
