@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2022251b-a58f-4556-949c-7bee9f4b1da8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/geeklab.py" afterPath="$PROJECT_DIR$/geeklab.py" />
-      <change beforePath="$PROJECT_DIR$/templates/emotion.html" afterPath="$PROJECT_DIR$/templates/emotion.html" />
-      <change beforePath="$PROJECT_DIR$/templates/lab.html" afterPath="$PROJECT_DIR$/templates/lab.html" />
-      <change beforePath="$PROJECT_DIR$/templates/poem.html" afterPath="$PROJECT_DIR$/templates/poem.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -228,6 +224,14 @@
       <option name="presentableId" value="Default" />
       <updated>1536818286386</updated>
     </task>
+    <task id="LOCAL-00001" summary="bugfix">
+      <created>1536827945247</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536827945247</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -283,6 +287,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bugfix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
