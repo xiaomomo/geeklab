@@ -3,33 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <title>极客实验室</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.14.3/esm/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+        .lab_content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+        }
+
+        .lab_title {
+            font-family: PingFangSC-Semibold;
+            font-size: 36px;
+            color: #333333;
+            letter-spacing: 0.61px;
+            text-align: center;
+        }
+
+        .project_pic {
+            background: #F1F8FF;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        .project_title {
+            font-family: PingFangSC-Medium;
+            font-size: 1.5rem;
+            color: #333333;
+            margin: 0;
+        }
+
+        .project_dec {
+            font-family: PingFangSC-Regular;
+            font-size: 1rem;
+            color: #999999;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        .lab {
+            margin: 1rem;
+            width: 40%;
+        }
+    </style>
 </head>
 <body>
-<h1>极客实验室</h1>
+<h1 class="lab_title">极客实验室</h1>
 
 <div class="lab_content">
+
     <div class="lab">
+        <img class="project_pic"
+             src="https://s1.ax1x.com/2018/09/13/iAch6J.jpg">
         <a href="/poem">
-            <img class="lab_pic">
-            <p class="lab_title">AI写诗器</p>
-            <p class="lab_desc">背了那么多古诗，我们来自己造一首吧！</p>
+            <p class="project_title">AI写诗器</p>
+            <p class="project_dec">背了那么多古诗，我们来自己造一首吧！</p>
         </a>
     </div>
 
     <div class="lab">
+
+        <img class="project_pic"
+             src="https://s1.ax1x.com/2018/09/13/iAch6J.jpg">
         <a href="/composition">
-            <img class="lab_pic">
-            <p class="lab_title">作文识别器</p>
-            <p class="lab_desc">写了几篇作文了？这些美好的作文长大后将会是你最好的回忆</p>
+            <p class="project_title">作文识别器</p>
+            <p class="project_dec">写了几篇作文了？这些美好的作文长大后将会是你最好的回忆</p>
         </a>
     </div>
 
     <div class="lab">
+
+        <img class="project_pic"
+             src="https://s1.ax1x.com/2018/09/13/iAch6J.jpg">
         <a href="/emotion">
-            <img class="lab_pic">
-            <p class="lab_title">情绪分辨器</p>
-            <p class="lab_desc">机器识别微表情</p>
+            <p class="project_title">情绪分辨器</p>
+            <p class="project_dec">机器识别微表情</p>
         </a>
+    </div>
+
+    <div class="lab">
+
+        <img class="project_pic"
+             src="https://s1.ax1x.com/2018/09/13/iAch6J.jpg">
+
+        <p class="project_title">更多请推荐</p>
     </div>
 </div>
 </body>
